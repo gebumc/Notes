@@ -1,0 +1,33 @@
+# 3.1 Temperture
+
+# 温度的引入
+
+根据热力学第二定律，两个互相接触的系统在达到平衡时，熵取到最大值。所以我们希望寻找这样一个函数，使得两个系统的该函数值相等时，系统达到平衡。
+
+我们首先考虑一个简单的例子，考虑两个Einstein solids, $A$和$B$，它们可以交换能量，并且总能量是定值。它们分别有$N_A$和$N_B$个oscillators，它们的总能量为$q$.
+
+当系统达到平衡时，系统的熵取到最大值，因此总熵对任何物理量的偏导为$0$，故有
+
+$\dfrac{\partial S_{total}}{\partial q_A}$=0，也即$\dfrac{\partial S_{total}}{\partial U_A}=0$，
+
+而由于
+
+$S_{total}=S_A+S_B$，
+
+故有
+
+$\dfrac{\partial (S_A+S_B)}{\partial U_A}=0$；
+
+而我们知道$U_A+U_B=U_{total}$，
+
+因此在系统平衡时有$\dfrac{\partial S_A}{\partial U_A}=\dfrac{\partial S_B}{\partial U_B}$
+
+因此，$\dfrac{\partial S_i}{\partial U_i}$就是我们想要的物理量，考虑到单位以及我们希望这个物理量能够实现“高温”向“低温”传热，我们取
+
+$T=\dfrac{\partial U}{\partial S}$便是我们熟知的温度。
+
+# 一个简单的例子
+
+仍然考虑一个Einstein solid，并且有$q\gg N$（能量数远大于oscillators的数量），总能量正比于能量数，即$U=\epsilon q$，在第二章中，我们计算得到了它的熵，即$S=Nk[\text{ln}(\dfrac{q}{N})+1]=Nk[\text{ln}(\dfrac{U/\epsilon}{N})+1]=Nk\text{ln}U-Nk\text{ln}(\epsilon N)+Nk$根据我们刚才对温度的定义，有
+
+$T=(\dfrac{\partial S}{\partial U})^{-1}=(\dfrac{Nk}{U})^{-1}$也即$U=NkT$，这和我们先前通过degree of freedom计算得到的内能表达式是一致的
