@@ -1,0 +1,5 @@
+# 0.2 微分流形 切空间
+2.1 定义：一个n维微分流形是一个集合M与一族满足下列条件的单射函数$\bold x_\alpha:U_\alpha \subset\mathrm{R}^n \rightarrow M$，
+
+(1) $\cup_\alpha \bold x(U_\alpha)=M$.
+(2) 对于任意满足$\bold x_\alpha(U_\alpha)\cap \bold x_\beta(U_\beta)=W \neq\varnothing$的$\alpha, \beta$，集合$\bold x^{-1}_\alpha(W)$和$\bold x^{-1}_\beta(W)$均为$\mathrm R^n$中的开集，且映射$\bold x^{-1}_\beta \circ \bold x_\alpha$可微.
